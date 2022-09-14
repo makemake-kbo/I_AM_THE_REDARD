@@ -3,6 +3,7 @@ const showAccount = document.querySelector('.showAccount');
 const provider = new ethers.providers.Web3Provider(window.ethereum)
 let signer;
 let accounts;
+let chainId;
 
 ethereumButton.addEventListener('click', () => {
   getAccount();
@@ -13,9 +14,8 @@ async function getAccount() {
   const redardContractSigner = await redardContract.connect(signer);
   accounts = await ethereum.request({ method: 'eth_requestAccounts' });
   
-  let { chainId } = await provider.getNetwork();
-  console.log("chainid", chainId);
-  if (chainId == 1) {
+  chainId = await provider.getNetwork();
+  if (chainId.chainId != '1') {
   	alert("Wrong network. Please change to mainnet ethereum and reload.");
   }
   
