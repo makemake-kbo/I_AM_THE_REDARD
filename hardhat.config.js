@@ -38,7 +38,7 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-      mainnet: process.env.ETHERSCAN_API_KEY !== undefined ? [process.env.ETHERSCAN_API_KEY] : [""],
+      mainnet: process.env.ETHERSCAN_API_KEY,
       goerli: process.env.ETHERSCAN_API_KEY
     },
   },
