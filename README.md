@@ -1,13 +1,7 @@
-# Sample Hardhat Project
+# I AM THE REDARD
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Prove youre the biggest redard by doing an on chain bogosort!  
+If you luck into solving it, you become the biggest redard and get rewarded with this sick NFT!  
+![bogocat](./bogocat.png)
+If you're really jealous of the biggest redard you can steal the jpeg by solving it yourself.  
+It's a never ending game of chicken!
