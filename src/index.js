@@ -4,11 +4,18 @@ const commitButton = document.getElementById('commitButton');
 const submitButton = document.getElementById('submitButton');
 
 async function commit(_commitment) {
-  var redardContractSigner = await redardContract.connect(signer);
-  tx = await redardContractSigner.commit(_commitment);
+  try{
+    var redardContractSigner = await redardContract.connect(signer);
+    if (_commitment == null) {
+      throw 'You need to input a number!';
+    }
+    tx = await redardContractSigner.commit(_commitment);
+  } catch(err){
+    alert('Something went wrong. You most likely need to connect a wallet or input a random number.');
+  }
 }
 commitButton.addEventListener('click', () => {
-  commit('1');
+  commit(document.getElementById('randomNumber').value);
 });
 
 async function BECOME_THE_RETARD() {
