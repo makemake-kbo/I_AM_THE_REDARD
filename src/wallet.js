@@ -15,6 +15,9 @@ async function getAccount() {
   
   let { chainId } = await provider.getNetwork();
   console.log("chainid", chainId);
+  if (chainId == 1) {
+  	alert("Wrong network. Please change to mainnet ethereum and reload.");
+  }
   
   ethereumButton.style.display = "none";
   showAccount.style.display = "block";
