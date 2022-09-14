@@ -5,3 +5,5 @@ If you luck into solving it, you become the biggest redard and get rewarded with
 ![bogocat](./bogocat.png)
 If you're really jealous of the biggest redard you can steal the jpeg by solving it yourself.  
 It's a never ending game of chicken!
+### Note:
+This is copy pasted ayyware. Expect things to not make sense and possibly not behave as intended
